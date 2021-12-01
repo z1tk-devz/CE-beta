@@ -6,7 +6,6 @@
 
 html {
     font-size: 62.5%;
-    font-family: "Arial", sans-serif;
 }
 
 .editor-menu {
@@ -27,6 +26,7 @@ html {
     padding: 8px 7px;
     border-radius: 3px;
     font-size: 1.6rem;
+    font-family: "Arial", sans-serif;
     margin-right: 8px;
     color: #fff;
     min-width: 5rem;
@@ -81,6 +81,7 @@ html {
     width: 100%;
     height: 100%;
     font-size: 1.6rem;
+    font-family: "Arial", sans-serif;
     outline: none;
     padding: 1rem 0 0 1rem;
     border-color: #ccc;
@@ -96,7 +97,8 @@ html {
     padding: 4px;
 }
 
-.ver {
+#ver {
+    font-family: "Arial", sans-serif;
     text-align: right;
     color: lightgray;
 }
