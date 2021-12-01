@@ -95,3 +95,7 @@ html {
     right: 0;
     padding: 4px;
 }
+
+.ver {
+    text-align: right;
+}
