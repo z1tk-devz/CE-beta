@@ -5,7 +5,11 @@ editor = document.querySelector(".editor"),
 run = document.querySelector(".btn-run"),
 iframe = document.querySelector(".iframe"),
 darkMode = document.querySelector(".btn-dark"),
-lightMode = document.querySelector(".btn-light");
+lightMode = document.querySelector(".btn-light"),
+menu = document.querySelector(".editor-menu"),
+live = document.querySelector(".live"),
+body = document.querySelector(".body");
+
 
 const drag = (e) => {
     e.preventDefault();
@@ -33,12 +37,30 @@ run.addEventListener("click", () => {
 darkMode.addEventListener("click", () => {
     editor.style.backgroundColor = "#363836";
     editor.style.color = "#eee";
+    menu.style.backgroundColor = "#363836";    
+    body.style.backgroundColor = "darkslategray";
+    darkMode.style.backgroundColor = "darkslategray";
+    lightMode.style.backgroundColor = "darkslategray";
+    run.style.backgroundColor = "darkslategray";
+    darkMode.style.color = "#eee";
+    lightMode.style.color = "#eee";
+    run.style.color = "#eee";
+    live.style.color = "#eee";
 })
 
 // Set Light Mode
 lightMode.addEventListener("click", () => {
     editor.style.backgroundColor = "";
     editor.style.color = "";
+    body.style.backgroundColor = "";
+    menu.style.backgroundColor = "";
+    darkMode.style.backgroundColor = "#31ad26";
+    lightMode.style.backgroundColor = "#31ad26";
+    run.style.backgroundColor = "#31ad26";
+    darkMode.style.color = "#fff";
+    lightMode.style.color = "#fff"
+    run.style.color = "#fff";
+    live.style.color = "";
 })
 
 // LIVE CODE
