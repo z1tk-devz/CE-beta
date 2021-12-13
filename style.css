@@ -23,6 +23,8 @@ body {
     align-items: center;
     padding: 5px 0 5px 10px;
     transition: all .3s;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .btn {
@@ -31,7 +33,7 @@ body {
     cursor: pointer;
     background-color: #31ad26;
     padding: 8px 7px;
-    border-radius: 3px;
+    border-radius: 25px;
     font-size: 1.6rem;
     font-family: "Arial", sans-serif;
     margin-right: 8px;
@@ -42,14 +44,15 @@ body {
 
 .live {
     font-size: 1.6rem;
-    border: 2px solid orangered;
     background-color: #31ad26;
     color: #fff;
-    padding: 5px;
+    padding: 8px 7px;
+    margin-right: 8px;
+    min-width: 5rem;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 25px;
     cursor: pointer;
     transition: all .3s;
 }
@@ -69,15 +72,9 @@ body {
 
 .left, .right {
     height: 100%;
+    border-radius: 10px;
     width: 50%;
     border: 1px solid #d5d5d5;
-}
-
-.bar {
-    width: 4px;
-    height: 100%;
-    background-color: #eee;
-    cursor: w-resize;
 }
 
 .right {
@@ -88,6 +85,7 @@ body {
     width: 100%;
     height: 30%;
     font-size: 1.2rem;
+    border-radius: 10px;
     font-family: 'Source Code Pro', monospace;
     outline: none;
     padding: 1rem 0 0 1rem;
@@ -98,6 +96,7 @@ body {
 .editor-css {
     width: 100%;
     height: 30%;
+    border-radius: 10px;
     font-size: 1.2rem;
     font-family: 'Source Code Pro', monospace;
     outline: none;
@@ -109,6 +108,7 @@ body {
 .editor-js {
     width: 100%;
     height: 30%;
+    border-radius: 10px;
     font-size: 1.2rem;
     font-family: 'Source Code Pro', monospace;
     outline: none;
@@ -120,10 +120,15 @@ body {
 .tocl {
     width: 100%;
     height: 3%;
+    border-radius: 10px;
     background-color: lightgray;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.toclp {
+    margin-left: 7px;
 }
 
 textarea {
@@ -133,6 +138,7 @@ textarea {
 .iframe {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     background-color: #fff;
     overflow-y: auto;
     white-space: pre;
