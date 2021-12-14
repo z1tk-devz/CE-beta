@@ -129,6 +129,8 @@ body {
 
 .toclp {
     margin-left: 7px;
+    padding-bottom: 10px;
+    cursor: pointer;
 }
 
 textarea {
@@ -153,3 +155,4 @@ textarea {
     color: lightgray;
     transition: all .3s;
 }
+
