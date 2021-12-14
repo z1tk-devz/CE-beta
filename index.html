@@ -6,6 +6,7 @@
         <meta name="description" content="Online JavaScript Compiler">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.">
         <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/x-icon" href="./favicon.png">
     </head>
 
     <body class="body">
@@ -16,21 +17,21 @@
                 <label for="live">Live-</label>
                 <input type="checkbox" id="live">
             </div>
-            <p id="ver">v0.5</p>
+            <p id="ver">v0.6</p>
         </div>
 
         <div class="container">
             <div class="left">
                 <div class="tocl tocl-1">
-                    <p class="toclp">HTML</p>
-                </div>
+                    <p class="toclp" onclick="dhtml()">HTML</p>
+                </div> 
                 <textarea class="editor-html"></textarea>
                 <div class="tocl tocl-2">
-                    <p class="toclp">CSS</p>
+                    <p class="toclp" onclick="dcss()">CSS</p>
                 </div>
                 <textarea class="editor-css"></textarea>
                 <div class="tocl tocl-3">
-                    <p class="toclp">JS</p>
+                    <p class="toclp" onclick="djs()">JS</p>
                 </div>
                 <textarea class="editor-js"></textarea>
             </div>
@@ -43,4 +44,3 @@
     </body>
 
 </html>
-
