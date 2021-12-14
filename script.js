@@ -19,6 +19,45 @@ let ldm = 0;
 // Run Btn Event Listener
 run.addEventListener("click", runcode)
 
+function dhtml() {
+    var htmlBlob = new Blob([editorhtml.value], {type: "text/html"});
+
+    var url = window.URL.createObjectURL(htmlBlob);
+    var anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = "index.html";
+
+    anchor.click();
+    window.URL.revokeObjectURL(url);
+    document.removeChild(anchor);
+}
+
+function dcss() {
+    var cssBlob = new Blob([editorcss.value], {type: "text/css"});
+
+    var url = window.URL.createObjectURL(cssBlob);
+    var anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = "style.css";
+
+    anchor.click();
+    window.URL.revokeObjectURL(url);
+    document.removeChild(anchor);
+}
+
+function djs() {
+    var jsBlob = new Blob([editorjs.value], {type: "text/js"});
+
+    var url = window.URL.createObjectURL(jsBlob);
+    var anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = "script.js";
+
+    anchor.click();
+    window.URL.revokeObjectURL(url);
+    document.removeChild(anchor);
+}
+
 // Set Dark Mode
 darkLightMode.addEventListener("click", () => {
     
